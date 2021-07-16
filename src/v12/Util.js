@@ -85,6 +85,7 @@ module.exports = {
       options.push({
         label: d.label,
         value: d.value,
+        default: d.default,
         emoji: d.emoji,
         description: d.description,
       });

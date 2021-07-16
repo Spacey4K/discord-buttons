@@ -9,6 +9,8 @@ class MessageMenuOption {
     this.label = 'label' in data && data.label ? resolveString(data.label) : undefined;
 
     this.value = 'value' in data && data.value ? resolveString(data.value) : undefined;
+    
+    this.default = data.default || false;
 
     if (data.emoji) this.setEmoji(data.emoji);
 

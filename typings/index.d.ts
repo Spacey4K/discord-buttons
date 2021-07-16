@@ -103,6 +103,7 @@ export interface MessageButtonOptions {
 export interface MessageMenuOptions {
   type: MessageComponentTypes.SELECT_MENU;
   label?: string;
+  default?: Boolean;
   emoji?: string | GuildButtonEmoji;
   description?: string;
   value?: string;

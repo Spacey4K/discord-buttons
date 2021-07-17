@@ -130,6 +130,7 @@ export interface MessageMenuData {
   custom_id?: string;
   max_values?: number;
   min_values?: number;
+  disabled?: Boolean;
   options?: Array<MessageMenuOptions>;
 }
 

@@ -69,6 +69,11 @@ class MessageMenu extends BaseMessageComponent {
     this.components.splice(index, deleteCount, ...options.flat(Infinity).map((c) => new MessageMenuOption(c).toJSON()));
     return this;
   }
+  
+  setDisabled(disable = false){
+    this.disabled = typeof disable === 'boolean' ? disable : false;
+    return this;
+  }
 
   toJSON() {
     return {
